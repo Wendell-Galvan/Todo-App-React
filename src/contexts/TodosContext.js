@@ -28,6 +28,7 @@ function Provider ({children}) {
 		});
 
 		setTodos(updatedTodos);
+		console.log(updatedTodos);
 	};
 
 	// Delete todo

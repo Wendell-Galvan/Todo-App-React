@@ -23,14 +23,14 @@ function TodoCreate() {
 
 	return (
 		<>
-			<div>
-				<button className="border-2 rounded-sm border-black my-2" onClick={(e) => handleSignOut(e)}>Sign Out</button>
+			<div className="grid justify-items-center">
+				<button className="border-2 rounded-sm border-gray my-2" onClick={(e) => handleSignOut(e)}>Sign Out</button>
 				<img className="my-2" src={user.picture} alt="profile"></img>
-				<h3 className="my-2">{user.name} Todos</h3>
+				<h3 className="my-2">{user.name}'s Todos</h3>
 			</div>
-			<div>
+			<div className="my-3">
 				<form onSubmit={handleSubmit}>
-					<input className="border-2 border-black" value={todo} onChange={handleChange} />
+					<input className="border-2 border-black" value={todo} placeholder="Enter task here..." onChange={handleChange} />
 				</form>
 			</div>
 		</>
